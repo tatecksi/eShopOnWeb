@@ -132,7 +132,7 @@ namespace Microsoft.eShopWeb.Web.Controllers
         public async Task<IActionResult> ChangePassword()
         {
             var user = await _userManager.GetUserAsync(User);
-throw new ApplicationException($"Oh no!  Error!  Error! Yell at Jeremy!  He put this here!");
+
             if (user == null)
             {
                 throw new ApplicationException($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
